@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <h1 class="survey-form">Survey Form</h1>
+    <div class="prompt">
+      <p>*Name:</p>
+      <input placeholder="Enter your name" type="text">
+    </div>
+    <div class="prompt">
+      <p>*Email:</p>
+      <input placeholder="Enter your Email" type="email">
+    </div>
+    <div class="prompt">
+      <p>*Age:</p>
+      <input placeholder="Age" type="number">
+    </div>
+    <div class="prompt">
+      <p>Which option best describes your current role?</p>
+      <select name="role" class="selection">
+        <option value="null" selected>Select a role</option>
+        <option value="Student">Student</option>
+        <option value="Professor">Professor</option>
+        <option value="Professor">Invigilator</option>
+        <option value="Professor">H.O.D</option>
+      </select>
+    </div>
+    <div class="prompt">
+      <p class="smallGrid">* How likely is that you would recommend freeCodeCamp to a friend</p>
+      <div class="checkbox-group">
+        <div class="checkbox">
+          <label for="choosing">Definitely</label>
+          <input name="recommend" type="radio" value="Definitely">
+        </div>
+        <div class="checkbox">
+          <label for="choosing">Maybe</label>
+          <input name="recommend" type="radio" value="Maybe">
+        </div>
+        <div class="checkbox">
+          <label for="choosing">Not sure</label>
+          <input name="recommend" type="radio" value="Not sure">
+        </div>
+      </div>
+    </div>
 
+    <div class="optionSelect">
+      <p>What do you like the most in FCC:</p>
+      <select name="option" class="selection">
+        <option value="null" selected>Select an Option</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
 
-
-    
-</body>
+    <div class="prompt">
+        <p class="smallGrid">Things that should be improved in the future<br>(Check all that apply):</p>
+        <div class="checkbox-group">
+            <div class="">
+                <label for="choosing">Front-end Projects</label>
+                <input type="checkbox" value="Front-end Projects">
+              </div>
+              <br>
+              <div class="">
+                <label for="choosing">Back-end Projects</label>
+                <input type="checkbox" value="Back-end Projects">
+              </div>
+              <br>
+              <div class="">
+                <label for="choosing">Data Visualization</label>
+                <input type="checkbox" value="Data Visualization">
+              </div>
+        </div>
+    </div>
+    <br><br><br>
+    <input type="submit">
+  </body>
 </html>
-
-
-
-
-
