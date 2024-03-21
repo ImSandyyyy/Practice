@@ -16,7 +16,6 @@ body {
 .checkbox-group {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
 }
 
 .prompt {
@@ -31,12 +30,19 @@ body {
 }
 
 .prompt > input {
-    height: 15px;
+    height: 20px;
     margin-left: 15px;
 }
 
 .selection {
-    margin-left: 15px;
+    background-color: #f0f0f0;
+    margin-left: 50px;
+    height: 30px;
+    width: 3.7cm;
+}
+
+input::placeholder {
+    color: #c1bab8;
 }
 
 .smallGrid {
